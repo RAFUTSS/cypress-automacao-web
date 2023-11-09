@@ -18,3 +18,5 @@ Os cenários de teste neste projeto incluirão uma variedade de interações com
 - Validação de comportamento esperado da aplicação.
 
 Cada cenário de teste será acompanhado de comentários explicativos e seguirá as melhores práticas de escrita de testes.
+## Conclusão
+Com base nas boas práticas de escrita de teste é necessário seguir todas as orientações apresentadas nesse documento, para melhor legibilidade e desenvolvimento dos testes.
