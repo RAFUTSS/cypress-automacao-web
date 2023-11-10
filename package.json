@@ -1,0 +1,20 @@
+{
+  "name": "cypress-automacao-web",
+  "version": "1.0.0",
+  "description": "O projeto a seguir tem ênfase na criação de automação para a própria aplicação web do Cypress",
+  "authors": [
+    {
+      "name": "Rafael Cristoiu"
+    },
+    {
+      "name": "Jonathan Tridente"
+    },
+    {
+      "name": "Renan Brocker"
+    }
+  ],
+  "devDependencies": {
+    "cypress": "^13.5.0",
+    "typescript": "^5.2.2"
+  }
+}
