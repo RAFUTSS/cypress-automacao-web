@@ -1,5 +1,6 @@
 describe('template spec', function () {
+let url = "https://www.cypress.io/";
   it('passes', function () {
-    cy.visit('https://example.cypress.io')
+    cy.visit(url);
   });
 });
