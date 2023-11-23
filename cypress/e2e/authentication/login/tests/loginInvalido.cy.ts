@@ -11,5 +11,5 @@ describe('Teste de login do Cypress.io', () => {
         cy.get('[id="password"]').type(usuario.pass)
         cy.get('[type="submit"]').should('have.text', 'Log In').click()
         cy.get('[class="error-message"]').should('have.text', ' Incorrect email address or password')
-    })
-})
+    });
+});
