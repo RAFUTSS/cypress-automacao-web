@@ -4,8 +4,7 @@ module.exports = defineConfig({
     something: "development",
     setupNodeEvents(config) {
       config.specPattern = [
-        "cypress/e2e/spec.cy.ts", 
-        "cypress/e2e/search/tests/search.cy.ts"
+        "cypress\e2e\authentication\login\tests\login.cy.ts"
       ];
       return config;
     },

@@ -3,12 +3,12 @@ describe('Testes de Pesquisas', function () {
     const tempo = 5000;
       it('Teste de Pesquisa', function () {
         cy.visit(url);
-        cy.wait(5000);
+        cy.wait(tempo);
         cy.get('.DocSearch-Button-Keys').click();
-        cy.wait(5000);
+        cy.wait(tempo);
         cy.get('.DocSearch-Input').click().type('should');
-        cy.wait(5000);
+        cy.wait(tempo);
         cy.get('.DocSearch-Hit-title').contains('should').click();
-        cy.wait(5000);
+        cy.wait(tempo);
       });
     });

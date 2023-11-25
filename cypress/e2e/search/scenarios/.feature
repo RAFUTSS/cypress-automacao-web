@@ -1,6 +1,7 @@
 Feature: Pesquisa
-  Scenario: Pesquisa em documentação do cypress
-    Given Na página de domentação cypress
-    When clica search
-    And Digita palavra should
-    Then Confirma conter palavra pesquisa
+  Scenario: Pesquisa encontrada
+    Given Que o usuário acessa a funcionalidade pesquisa
+    When Clica em search
+    And insere should
+    And Enter
+    Then Acessa 
