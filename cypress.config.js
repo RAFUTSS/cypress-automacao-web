@@ -11,7 +11,8 @@ module.exports = defineConfig({
       config.specPattern = [
        "cypress/e2e/authentication/login/tests/login.cy.ts",
        "cypress/e2e/authentication/login/tests/loginInvalido.cy.ts",
-       "cypress/e2e/search/tests/search.cy.ts"
+       "cypress/e2e/search/tests/search.cy.ts",
+       "cypress/e2e/register/tests/register.cy.ts"
       ];
       return config;
     },
