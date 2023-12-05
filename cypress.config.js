@@ -1,10 +1,18 @@
 const { defineConfig } = require("cypress");
+const fs = require('fs');
 module.exports = defineConfig({
   e2e: {
     something: "development",
-    setupNodeEvents(config) {
+    setupNodeEvents(on, config) {
+      on('task', {readDirectory: (path) => {
+        return fs.readdirSync(path);
+      },
+    });
       config.specPattern = [
-        "cypress/e2e/spec.cy.ts"
+       "cypress/e2e/authentication/login/tests/login.cy.ts",
+       "cypress/e2e/authentication/login/tests/loginInvalido.cy.ts",
+       "cypress/e2e/search/tests/search.cy.ts",
+       "cypress/e2e/register/tests/register.cy.ts"
       ];
       return config;
     },
@@ -17,3 +25,4 @@ module.exports = defineConfig({
     taskTimeout: 20000,
   },
 });
+
